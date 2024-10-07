@@ -1,0 +1,66 @@
+/*
+Theme Name: LitGram Study
+Theme URI: http://example.com/litgram-study-theme/
+Author: Your Name
+Author URI: http://example.com
+Description: A custom WordPress theme for LitGram Study, a subscription-based learning platform.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: litgram-study
+Tags: education, e-learning, subscription, responsive
+*/
+
+/* Include the existing styles */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f5a623;
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --white: #ffffff;
+}
+
+/* Rest of the existing CSS code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ... (rest of the existing CSS) ... */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .feature, .plan, .footer-section {
+    flex-basis: 100%;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
